@@ -84,11 +84,11 @@ class User extends CI_Controller {
 
 				$newUser = array(
 					'username' =>$data['username'],
-					'passowrd' =>$data['passowrd'],
+					'password' =>$data['password'],
 
 				 );
 
-				$result=$this->User_model->addUser($newPlace);
+				$result=$this->User_model->addUser($newUser);
 
 				if($result){
 
